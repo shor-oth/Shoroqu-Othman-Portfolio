@@ -1,0 +1,45 @@
+u1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#794496;
+}
+
+li {
+    float: left;
+}
+
+li a:hover {
+    background-color: white;
+    color:#794496;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #794496;
+    font-size: larger;
+    font-weight: bolder;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    align-items: center;
+    background-color: #dab7ee;
+    color: white;
+}
