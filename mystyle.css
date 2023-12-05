@@ -1,45 +1,235 @@
-u1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#794496;
-}
-
-li {
-    float: left;
-}
-
-li a:hover {
-    background-color: white;
-    color:#794496;
-}
-
-li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #794496;
-    font-size: larger;
-    font-weight: bolder;
-    font-family:'Courier New', Courier, monospace;
-    color: white;
-    text-align: center;
-    
-}
-
 h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
-p {
+.header-container {
     text-align: center;
+    color: white;
+    background-color: #794496;
+    padding: 14px 20px;
+}
+
+p {
+    text-align: left;
     font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
 }
 
 body {
     align-items: center;
     background-color: #dab7ee;
     color: white;
+    padding: 0;
+
+}
+
+.top-navbar {
+    background-color: #794496;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+}
+
+.top-navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 40px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.top-navbar a:hover {
+    background-color: white;
+    color: #794496;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-style {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.description {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  #contactForm label,
+  #contactForm input,
+  #contactForm textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color:#794496;
+    font-family:'Courier New', Courier, monospace;
+    font-size:larger;
+  }
+
+  #contactForm textarea {
+    height: 100px;
+  }
+
+  #contactForm input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #794496;
+    color: white;
+    cursor: pointer;
+  }
+
+  #contactForm input[type="button"]:hover {
+    background-color: white;
+    color:#794496;
+  }
+
+  #contactForm {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #dab7ee;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.social-media-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 400px; /* Adjust size of the circular frame */
+    height: 400px; /* Adjust size of the circular frame */
+    border-radius: 50%; /* Make it a circle */
+    overflow: hidden; /* Hide overflowing content */
+    float: right; /* Float to the right */
+    margin-left: auto; /* Push to the right */
+    margin-right: 900px; /* Add space from the right edge */
+    border: 2px solid #333; /* Border color */
+}
+
+.profile-photo img {
+    width: 100%; /* Set the width to fill the circular frame */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Keep the image circular */
+}
+
+.background-image {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://tkahler.com/blog/wp-content/uploads/2016/11/20161121-chicago-syline-sunrise-ba01-hdr-edit.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1; /* Allows the content to take up remaining space */
+}
+
+.bottom-navbar {
+    background-color: #794496;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.bottom-navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 40px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.bottom-navbar a:hover {
+    background-color: white;
+    color: #794496;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
