@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Shoroqu Othman Photography</title>
         <link rel="stylesheet" href="mystyle.css">
-        <link rel="scriptong" href="server.js">
+        <script src="script.js"></script>
     </head>
     <body>
         <nav class="top-navbar">
@@ -18,17 +18,57 @@
              </div>        
          </nav>
          <h1>Photography</h1>
-         <br>
-         <div class="gallery">
-             <div class="image">
-                 <img src="image1.jpg" alt="Image 1">
-                 <div class="description">Description for Image 1</div>
-             </div>
-             <div class="image">
-                 <img src="image2.jpg" alt="Image 2">
-                 <div class="description">Description for Image 2</div>
-             </div>
-             <!-- Add more images and descriptions here -->
-         </div>
+         <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="photos\IMG_7343.JPG" style="width:100%">
+            </div>
+    
+            <div class="slide fade">
+                <embed src="photos\9AE6EDA1-6449-480F-81EF-C9E323CF19FB.JPG" style="width:100%">
+            </div>
+    
+            <div class="slide fade">
+                <embed src="photos\IMG_1399.jpg" style="width:100%">
+            </div>
+    
+            <div class="slide fade">
+                <embed src="photos\IMG_1400.jpg" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <embed src="photos\IMG_1401.jpg" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <embed src="photos\IMG_4930.jpg" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <embed src="photos\IMG_4931.jpg" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <embed src="photos\IMG_4932.jpg" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <embed src="photos\IMG_4933.jpg" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <embed src="photos\IMG_4937.jpg" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <embed src="photos\IMG_4970.JPG" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <embed src="photos\7A659268-7FDD-44B5-BC8C-45DB4BD85073.JPG" style="width:100%">
+            </div>
+    
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
     </body>
 </html>

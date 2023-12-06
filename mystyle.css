@@ -11,6 +11,8 @@ h1 {
 }
 
 p {
+    margin-left: 250px;
+    margin-right: 250px;
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
@@ -62,73 +64,6 @@ body {
     padding: 0;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.image {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-}
-
-.description {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-  #contactForm label,
-  #contactForm input,
-  #contactForm textarea {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    color:#794496;
-    font-family:'Courier New', Courier, monospace;
-    font-size:larger;
-  }
-
-  #contactForm textarea {
-    height: 100px;
-  }
-
-  #contactForm input[type="button"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #794496;
-    color: white;
-    cursor: pointer;
-  }
-
-  #contactForm input[type="button"]:hover {
-    background-color: white;
-    color:#794496;
-  }
-
-  #contactForm {
-    width: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #dab7ee;
-}
-
 .logo {
     width: 40px;
     height: auto;
@@ -141,44 +76,47 @@ body {
 }
 
 .profile-photo {
-    width: 400px; /* Adjust size of the circular frame */
-    height: 400px; /* Adjust size of the circular frame */
+    width: 300px; /* Adjust size of the circular frame */
+    height: 300px; /* Adjust size of the circular frame */
     border-radius: 50%; /* Make it a circle */
     overflow: hidden; /* Hide overflowing content */
     float: right; /* Float to the right */
     margin-left: auto; /* Push to the right */
-    margin-right: 900px; /* Add space from the right edge */
-    border: 2px solid #333; /* Border color */
+    margin-right: 225px; /* Add space from the right edge */
+    border: 2px solid #794496; /* Border color */
 }
 
 .profile-photo img {
     width: 100%; /* Set the width to fill the circular frame */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Set the height to fill the circular frame */
+    object-fit: cover; /* Fill the entire frame without distortion */
     border-radius: 50%; /* Keep the image circular */
 }
 
 .background-image {
     margin: 0;
     padding: 0;
-    background-image: url('https://tkahler.com/blog/wp-content/uploads/2016/11/20161121-chicago-syline-sunrise-ba01-hdr-edit.jpg');
-    background-size: cover;
+    background-image: url('explore more.png');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .content {
-    flex-grow: 1; /* Allows the content to take up remaining space */
+    flex-grow: 1;
+    height: 2000px;
 }
 
 .bottom-navbar {
     background-color: #794496;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding: 0;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .bottom-navbar a {
@@ -186,9 +124,11 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 16px 40px;
+    padding: 14px 20px;
     text-decoration: none;
-    margin: 0;
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .bottom-navbar a:hover {
@@ -208,6 +148,10 @@ body {
     display: none;
 }
 
+.slide:first-child {
+    display: block; /* Show the first slide by default */
+}
+
 img {
     width: 100%;
     height: auto;
@@ -220,7 +164,7 @@ img {
     transform: translateY(-50%);
     cursor: pointer;
     padding: 16px;
-    color: white;
+    color: gray;
     font-weight: bold;
     font-size: 20px;
     user-select: none;
