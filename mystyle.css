@@ -179,11 +179,12 @@ img {
 }
 
 .video-container {
-    margin-top: 0px;
+    padding-top: -300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set height for centering vertically */
+    height: 100vh;
+    margin-bottom: -300px;
 }
 
 .video-wrapper {
@@ -191,6 +192,64 @@ img {
 }
 
 .text-above {
-    margin-bottom: -275px; /* Adjust the margin to remove space */
     padding-bottom: 0;
 }
+
+.senior-portfolio {
+    padding-top: 20px;
+    margin-bottom: -300px;
+}
+
+.acquifishing {
+    padding-top: -300px;
+}
+
+.acquifishing-container {
+    margin-bottom: -200px;
+}
+
+.slideshow-container-2 {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background-color: #dab7ee; /* Match the body background color */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.slideshow-container-2 .slide {
+    display: none;
+}
+
+.slideshow-container-2 .slide:first-child {
+    display: block; /* Show the first slide by default */
+}
+
+.slideshow-container-2 img,
+.slideshow-container-2 embed {
+    width: 100%;
+    height: auto;
+}
+
+/* Updated class names for navigation buttons */
+.slideshow-container-2 .prev-acquifishing,
+.slideshow-container-2 .next-acquifishing {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+/* Adjust button positions */
+.slideshow-container-2 .prev-acquifishing {
+    left: 0;
+}
+
+.slideshow-container-2 .next-acquifishing {
+    right: 0;
+}
+
