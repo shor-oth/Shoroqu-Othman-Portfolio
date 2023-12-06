@@ -177,3 +177,20 @@ img {
 .next {
     right: 0;
 }
+
+.video-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height for centering vertically */
+}
+
+.video-wrapper {
+    max-width: 1000px; /* Set maximum width for the video */
+}
+
+.text-above {
+    margin-bottom: -275px; /* Adjust the margin to remove space */
+    padding-bottom: 0;
+}
